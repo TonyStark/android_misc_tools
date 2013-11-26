@@ -1,0 +1,5 @@
+# vim swap files
+*.swp
+
+# Logs of any runs performed
+logs
