@@ -24,7 +24,8 @@ You really don't want to do this.  Use the pre-compiled packages in this repo
 
 1. Install libbz2-dev, libbz2-1.0, zlib-dev packages
 1. Copy libmincrypt, mincrypt, minelf, mtdutils from bootable/recovery and system/core to the local source dir
-1. Compile applypatch: gcc -lbz2 -lz -o imgpatch utils.c imgpatch.c bsdiff.c libmincrypt/sha.c libmincrypt/sha256.c libmincrypt/rsa.c minelf/Retouch.c edify/expr.c applypatch.c mtdutils/mtdutils.c freecache.c bspatch.c main.c
+1. Compile applypatch: gcc -o imgpatch utils.c imgpatch.c bsdiff.c libmincrypt/sha.c libmincrypt/sha256.c libmincrypt/rsa.c minelf/Retouch.c edify/expr.c applypatch.c mtdutils/mtdutils.c freecache.c bspatch.c main.c -lz -lbz2
+
 1. 
 
 
